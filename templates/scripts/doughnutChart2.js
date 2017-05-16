@@ -105,7 +105,6 @@ var myChart = new Chart(ctx, {
         '#67AAF9',
         '#37394C',
         '#F4F1EA'
-
       ],
       borderWidth: 1,
       borderRadius: 1
