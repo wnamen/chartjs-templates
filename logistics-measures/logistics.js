@@ -184,6 +184,7 @@ var myChart = new Chart(ctx, {
         type: 'line',
         data: [38,34,48,29,22,23,34,22,32,18,13,19],
         borderColor: '#FFBB41',
+        borderDash: [10,10],
         backgroundColor: 'transparent'
       },
       {
@@ -242,9 +243,6 @@ var myChart = new Chart(ctx, {
     ]
   },
   options: {
-    legend: {
-      display: false
-    },
     scales: {
       xAxes: [{
         display: false
@@ -267,6 +265,7 @@ var myChart = new Chart(ctx, {
         type: 'line',
         data: [80,83,89,98,95,94,99,93,78,85,83,93],
         borderColor: '#FFBB41',
+        borderDash: [10,10],
         backgroundColor: 'transparent'
       },
       {
@@ -441,6 +440,109 @@ var myChart = new Chart(ctx, {
           }
         }
       ]
+    }
+  }
+});
+
+
+var ctx = document.getElementById("Backlog");
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: [ "M1","M2","M3","M4","M5","M6", "M7","M8","M9","M10","M11","M12"],
+    datasets: [
+      {
+        type: 'line',
+        data: [38,34,48,29,22,23,34,22,32,18,13,19],
+        borderColor: '#FFBB41',
+        borderDash: [10,10],
+        backgroundColor: 'transparent'
+      },
+      {
+        type: 'bar',
+        data: [38,34,48,29,22,23,34,22,32,18,13,19],
+        backgroundColor: '#67AAF9',
+      }
+    ]
+  },
+  options: {
+    elements: {
+      point: {
+        radius: 0
+      }
+    },
+    legend: {
+      display: false
+    },
+    scales: {
+      xAxes: [{
+        barPercentage: 0.3,
+        gridLines: {
+          display:false
+        }
+      }],
+      yAxes: [{
+        gridLines : {
+          drawBorder: false
+        },
+        ticks: {
+          padding: 20,
+          beginAtZero:true,
+          maxTicksLimit: 3
+        }
+      }]
+    }
+  }
+});
+
+
+
+var ctx = document.getElementById("Total-Value-Recovery-Rate");
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: [ "15","30","45","60","75","90", "105","120"],
+    datasets: [
+      {
+        type: 'line',
+        data: [38,34,48,29,22,23,34,22],
+        borderColor: '#FFBB41',
+        borderDash: [10,10],
+        backgroundColor: 'transparent'
+      },
+      {
+        type: 'bar',
+        data: [38,34,48,29,22,23,34,22],
+        backgroundColor: '#67AAF9',
+      }
+    ]
+  },
+  options: {
+    elements: {
+      point: {
+        radius: 0
+      }
+    },
+    legend: {
+      display: false
+    },
+    scales: {
+      xAxes: [{
+        barPercentage: 0.3,
+        gridLines: {
+          display:false
+        }
+      }],
+      yAxes: [{
+        gridLines : {
+          drawBorder: false
+        },
+        ticks: {
+          padding: 20,
+          beginAtZero:true,
+          maxTicksLimit: 3
+        }
+      }]
     }
   }
 });

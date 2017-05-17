@@ -211,9 +211,6 @@ var myChart = new Chart(ctx, {
         radius: 0
       }
     },
-    legend: {
-      display: false
-    },
     scales: {
       xAxes: [{
         barPercentage: 0.3,
@@ -367,9 +364,6 @@ var myChart = new Chart(ctx, {
         radius: 0
       }
     },
-    legend: {
-      display: false
-    },
     scales: {
       xAxes: [{
         barPercentage: 0.3,
@@ -514,9 +508,6 @@ var myChart = new Chart(ctx, {
     ]
   },
   options: {
-    legend: {
-      display: false
-    },
     scales: {
       xAxes: [{
         stacked: true,

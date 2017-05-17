@@ -313,9 +313,6 @@ var myChart = new Chart(ctx, {
     ]
   },
   options: {
-    legend: {
-      display: false
-    },
     scales: {
       xAxes: [{
         stacked: true,
@@ -358,9 +355,6 @@ var myChart = new Chart(ctx, {
     ]
   },
   options: {
-    legend: {
-      display: false
-    },
     scales: {
       xAxes: [{
         display: false
@@ -510,9 +504,6 @@ var myChart = new Chart(ctx, {
     ]
   },
   options: {
-    legend: {
-      display: false
-    },
     scales: {
       xAxes: [{
         stacked: true,
@@ -531,6 +522,138 @@ var myChart = new Chart(ctx, {
           beginAtZero:true,
           max: 100
         }
+      }]
+    }
+  }
+});
+
+var ctx = document.getElementById("Premium-Vs-Classic-(Q1)");
+var myChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: ['Premium','Standard'],
+    datasets: [{
+      data: [20, 80],
+      backgroundColor: [
+        '#67AAF9',
+        '#D1E5FD'
+      ],
+      borderWidth: 1,
+      borderRadius: 1
+    }]
+  },
+  options: {
+    cutoutPercentage: 80,
+    elements: {
+      arc: {
+        roundedCornersFor: 0
+      }
+    },
+    scales: {
+      xAxes: [{
+        display: false
+      }],
+      yAxes: [{
+        display: false
+      }]
+    }
+  }
+});
+
+var ctx = document.getElementById("Premium-Vs-Classic-(Q2)");
+var myChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: ['Premium','Standard'],
+    datasets: [{
+      data: [30, 70],
+      backgroundColor: [
+        '#67AAF9',
+        '#D1E5FD'
+      ],
+      borderWidth: 1,
+      borderRadius: 1
+    }]
+  },
+  options: {
+    cutoutPercentage: 80,
+    elements: {
+      arc: {
+        roundedCornersFor: 0
+      }
+    },
+    scales: {
+      xAxes: [{
+        display: false
+      }],
+      yAxes: [{
+        display: false
+      }]
+    }
+  }
+});
+
+var ctx = document.getElementById("Premium-Vs-Classic-(Q3)");
+var myChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: ['Premium','Standard'],
+    datasets: [{
+      data: [25, 75],
+      backgroundColor: [
+        '#67AAF9',
+        '#D1E5FD'
+      ],
+      borderWidth: 1,
+      borderRadius: 1
+    }]
+  },
+  options: {
+    cutoutPercentage: 80,
+    elements: {
+      arc: {
+        roundedCornersFor: 0
+      }
+    },
+    scales: {
+      xAxes: [{
+        display: false
+      }],
+      yAxes: [{
+        display: false
+      }]
+    }
+  }
+});
+
+var ctx = document.getElementById("Premium-Vs-Classic-(Q4)");
+var myChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: ['Premium','Standard'],
+    datasets: [{
+      data: [35, 65],
+      backgroundColor: [
+        '#67AAF9',
+        '#D1E5FD'
+      ],
+      borderWidth: 1,
+      borderRadius: 1
+    }]
+  },
+  options: {
+    cutoutPercentage: 80,
+    elements: {
+      arc: {
+        roundedCornersFor: 0
+      }
+    },
+    scales: {
+      xAxes: [{
+        display: false
+      }],
+      yAxes: [{
+        display: false
       }]
     }
   }

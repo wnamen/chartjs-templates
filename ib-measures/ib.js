@@ -158,9 +158,6 @@ var myChart = new Chart(ctx, {
     ]
   },
   options: {
-    legend: {
-      display: false
-    },
     scales: {
       xAxes: [{
         stacked: true,
@@ -219,9 +216,6 @@ var myChart = new Chart(ctx, {
     ]
   },
   options: {
-    legend: {
-      display: false
-    },
     scales: {
       xAxes: [{
         stacked: true,
