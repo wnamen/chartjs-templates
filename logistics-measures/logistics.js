@@ -184,7 +184,6 @@ var myChart = new Chart(ctx, {
         type: 'line',
         data: [38,34,48,29,22,23,34,22,32,18,13,19],
         borderColor: '#FFBB41',
-        borderDash: [10,10],
         backgroundColor: 'transparent'
       },
       {
@@ -328,6 +327,7 @@ var myChart = new Chart(ctx, {
         yAxisID: "y-axis-1",
         type: 'line',
         data: [84,88,79,78,55,64,89,83,88,87,82,91],
+        borderDash: [10,10],
         borderColor: '#FFBB41',
         backgroundColor: 'transparent'
       },
@@ -391,6 +391,7 @@ var myChart = new Chart(ctx, {
         yAxisID: "y-axis-1",
         type: 'line',
         data: [80,83,89,98,95,94,99,93,78,85,83,93],
+        borderDash: [10,10],
         borderColor: '#FFBB41',
         backgroundColor: 'transparent'
       },
@@ -455,7 +456,6 @@ var myChart = new Chart(ctx, {
         type: 'line',
         data: [38,34,48,29,22,23,34,22,32,18,13,19],
         borderColor: '#FFBB41',
-        borderDash: [10,10],
         backgroundColor: 'transparent'
       },
       {
@@ -507,7 +507,6 @@ var myChart = new Chart(ctx, {
         type: 'line',
         data: [38,34,48,29,22,23,34,22],
         borderColor: '#FFBB41',
-        borderDash: [10,10],
         backgroundColor: 'transparent'
       },
       {
