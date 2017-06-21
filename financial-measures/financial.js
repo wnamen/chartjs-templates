@@ -480,7 +480,7 @@ var myChart = new Chart(ctx, {
     labels: [ "Q1","Q2", "Q3", "Q4"],
     datasets: [
       {
-        label: 'Total IB',
+        label: 'Bookings',
         data: [4,10,8,14],
         backgroundColor: [
           '#67AAF9',
@@ -493,7 +493,7 @@ var myChart = new Chart(ctx, {
         ]
       },
       {
-        label: 'Uncovered IB',
+        label: 'Multiyear Bookings',
         data: [11,10,21,15],
         backgroundColor: [
           '#FFBB41',
